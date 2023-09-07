@@ -1,5 +1,7 @@
 # Book Reviews mini-project
-The purpose of this React project was to be a small transition after completing the offical React tutorial and a ( relatively ) larger project like building my personal portfolio. My primary goal is to get a better understanding and mess around with the basics of React. This year, I've made it a personal goal of mine to start reading some more books, most of which are meant to improve myself, through building better habits or just building overall confidence. While reading, I often make small notes and highlights with nowhere to showcase them, so I thought I'd use this project as a way to save, and showcase some of the parts I thought were particularly interesting and worth sharing. 
+The purpose of this React project was to be a small transition after completing the offical React tutorial and a ( relatively ) larger project like building my personal portfolio. My primary goal is to get a better understanding and mess around with the basics of React. <br>
+<br>
+This year, I've made it a personal goal of mine to start reading some more books, most of which are meant to improve myself, through building better habits or just building overall confidence. While reading, I often make small notes and highlights with nowhere to showcase them, so I thought I'd use this project as a way to save, and showcase some of the parts I thought were particularly interesting and worth sharing. 
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
