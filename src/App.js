@@ -30,7 +30,8 @@ export default function App() {
 }
 
 function FetchTest() {
-  const apiKey = process.env.GoogleBooksAPIKey;
+  const apiKey = process.env.REACT_APP_GOOGLEBOOKS_APIKEY;
+  // console.log(apiKey);
   useEffect(() => {
     fetch(
       `https://www.googleapis.com/books/v1/volumes?q=flowers+inauthor:keyes&key=${apiKey}`
