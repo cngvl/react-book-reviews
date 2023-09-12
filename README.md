@@ -3,6 +3,8 @@ The purpose of this React project was to be a small transition after completing 
 <br>
 This year, I've made it a personal goal of mine to start reading some more books, most of which are meant to improve myself, through building better habits or just building overall confidence. While reading, I often make small notes and highlights with nowhere to showcase them, so I thought I'd use this project as a way to save, and showcase some of the parts I thought were particularly interesting and worth sharing. 
 
+EDIT: I will be scrapping the idea to somehow export highlighted notes from my Kindle as this is probably a big task for something I wanted to be a quick project. I will likely revisit this idea after getting some more practice and research about how data is stored in my Kindle sometime in the far future. 
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
