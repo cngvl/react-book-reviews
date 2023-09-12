@@ -3,7 +3,8 @@ The purpose of this React project was to be a small transition after completing 
 <br>
 This year, I've made it a personal goal of mine to start reading some more books, most of which are meant to improve myself, through building better habits or just building overall confidence. While reading, I often make small notes and highlights with nowhere to showcase them, so I thought I'd use this project as a way to save, and showcase some of the parts I thought were particularly interesting and worth sharing. 
 
-> EDIT: I will be scrapping the idea to somehow export highlighted notes from my Kindle as this is probably a big task for something I wanted to be a quick project. I will likely revisit this idea after getting some more practice and research about how data is stored in my Kindle sometime in the far future.
+> EDIT: I will be scrapping the idea to somehow export highlighted notes from my Kindle as this is probably a big task for something I wanted to be a quick project. I will likely revisit this idea after getting some more practice and research about how data is stored in my Kindle sometime in the far future. \
+> <br>
 > New focus for this project is to just create a clone for a book review site similar to [this](https://www.australianbookreview.com.au/). 
 
 
@@ -12,21 +13,25 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
-
-### `npm start`
-
+```
+ npm start
+```
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+ ```
+ npm test
+```
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+ ```
+ npm run build
+ ```
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -36,7 +41,9 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+```
+npm run eject
+```
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
