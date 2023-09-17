@@ -21,10 +21,11 @@ export default function App() {
     //   </header>
     // </div>
     <div>
-      <p>sdds</p>
+      <LogoBar />
+      <NavBar />
       <BookReviewCard />
       <BookReviewCard />
-      <FetchTest />
+      <Footer />
     </div>
   );
 }
@@ -43,8 +44,7 @@ function FetchTest() {
         return response.json();
       })
       .then((data) => {
-        // console.log(`x`);
-        console.log(data.json());
+        console.log(data);
       })
       .catch((error) => console.log(error));
   }, [apiKey]);
@@ -53,10 +53,49 @@ function FetchTest() {
 // function Test() {
 //   return (
 //     <React.Fragment>
-//       <p>Testing</p>
+//       <div>
+//         <p>Testing</p>
+//       </div>
+//       ;
 //     </React.Fragment>
 //   );
 // }
+
+function LogoBar() {
+  return (
+    <React.Fragment>
+      <div>
+        <p>LogoBar</p>
+      </div>
+    </React.Fragment>
+  );
+}
+
+function NavBar() {
+  return (
+    <React.Fragment>
+      <div className="NavBar">
+        <ul>
+          <li>X</li>
+          <li>Y</li>
+          <li>Z</li>
+          <li>A</li>
+        </ul>
+      </div>
+    </React.Fragment>
+  );
+}
+
+function Footer() {
+  return (
+    <React.Fragment>
+      <div>
+        <p>Testing</p>
+      </div>
+      ;
+    </React.Fragment>
+  );
+}
 
 function BookReviewCard() {
   return (
