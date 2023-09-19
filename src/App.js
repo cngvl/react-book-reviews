@@ -104,6 +104,7 @@ function BookReviewCard() {
         {/* Need image */}
         {/* Need header */}
         {/* Need description from API? */}
+        {/* Do I need a star system? */}
         <p>BookReviewCard</p>
       </div>
     </React.Fragment>
