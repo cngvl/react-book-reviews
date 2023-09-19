@@ -3,7 +3,9 @@ import React from "react";
 const Card = () => {
   return (
     <>
-      <p>Testing card import</p>
+      <div className="card">
+        <p>Testing card import</p>
+      </div>
     </>
   );
 };
