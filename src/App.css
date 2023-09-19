@@ -42,3 +42,18 @@
   padding: 10px;
   margin: 10px;
 }
+
+.NavBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #282c34;
+  color: white;
+  padding: 10px;
+}
+
+.LogoBar {
+  align-items: center;
+  text-align: center;
+}
