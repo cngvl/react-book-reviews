@@ -1,6 +1,6 @@
 import React from "react";
 
-function LogoBar() {
+const LogoBar = () => {
   return (
     <>
       <div className="LogoBar">
@@ -8,6 +8,6 @@ function LogoBar() {
       </div>
     </>
   );
-}
+};
 
 export default LogoBar;
