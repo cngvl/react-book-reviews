@@ -1,30 +1,26 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
-function SearchBar(search) {
+const SearchBar = () => {
+  const [search, setSearch] = useState("");
+
   // Not sure if it makes much sense for the function to be here?
   function onChangeTest() {
     console.log("calling onChangeTest");
   }
 
-  function FetchTest() {
+  // Wrapping this in a useEffect meant that the fetchData method call in the return couldn't be read.
+  const fetchedData = async () => {
     const apiKey = process.env.REACT_APP_GOOGLEBOOKS_APIKEY;
-    // console.log(apiKey);
-    useEffect(() => {
-      fetch(
-        `https://www.googleapis.com/books/v1/volumes?q=flowers+inauthor:keyes&key=${apiKey}`
-      )
-        .then((response) => {
-          if (!response.ok) {
-            throw new Error("Network response was not ok");
-          }
-          return response.json();
-        })
-        .then((data) => {
-          console.log(data);
-        })
-        .catch((error) => console.log(error));
-    }, [apiKey]);
-  }
+    const url = `https://www.googleapis.com/books/v1/volumes?q=flowers+inauthor:keyes&key=${apiKey}`;
+
+    try {
+      const response = await fetch(url);
+      const json = await response.json();
+      console.log(json);
+    } catch (error) {
+      console.log("error", error);
+    }
+  };
 
   return (
     <>
@@ -32,9 +28,12 @@ function SearchBar(search) {
         <input
           type="text"
           placeholder="Enter title of book"
+          value={search}
           onChange={(event) => {
             onChangeTest();
-            // FetchTest(); - THIS BREAKS
+            // fetchedData(); // THIS BREAKS
+            // console.log(event.target.value);
+            setSearch(event.target.value);
           }}
           // onChange={(event) => console.log(event.nativeEvent.data)}
         />
@@ -42,6 +41,6 @@ function SearchBar(search) {
       </div>
     </>
   );
-}
+};
 
 export default SearchBar;
